@@ -9,6 +9,9 @@ It is intended solely as a project to familiarize myself with the use of SIMD in
 Useful sites:
 - [Beginner's Guide To SIMD](https://github.com/rust-lang/portable-simd/blob/master/beginners-guide.md)
 
+What next?
+- Smoothing algorithm or something with more complexity
+
 ## Tests
 
 TODO - Will add tests in the week.
