@@ -1,0 +1,14 @@
+[package]
+name = "pearson-correlation-rs"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70"
+authors = ["Dan Dixey", "Dan Dixey <dan@functorml.co.uk>"]
+license = "MIT OR Apache-2.0"
+description = "Simple Rust implementation of the correlation algorithm."
+keywords = ["mathematics", "algorithms", "science"]
+categories = ["mathematics", "algorithms", "science"]
+
+[dependencies]
+anyhow = "1.0"
+packed_simd = "0.3"
