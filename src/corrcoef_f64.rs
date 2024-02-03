@@ -2,6 +2,7 @@ use packed_simd::f64x4;
 
 const SIZE: usize = 4;
 
+#[must_use]
 /// The Pearson correlation coefficient measures the linear relationship between
 /// the two sequences of values.
 ///
@@ -11,7 +12,8 @@ const SIZE: usize = 4;
 /// * `seq1` - The first sequence
 /// * `seq2` - The second sequence
 ///
-fn corrcoef_f64x4(seq1: &[f64], seq2: &[f64]) -> f64 {
+/// # Panics
+pub fn corrcoef_f64x4(seq1: &[f64], seq2: &[f64]) -> f64 {
     let seq_len = seq1.len();
     assert_eq!(seq_len, seq2.len());
 

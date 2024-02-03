@@ -2,6 +2,7 @@ use packed_simd::f32x8;
 
 const SIZE: usize = 8;
 
+#[must_use]
 /// The Pearson correlation coefficient measures the linear relationship between
 /// the two sequences of values.
 ///
@@ -11,7 +12,8 @@ const SIZE: usize = 8;
 /// * `seq1` - The first sequence
 /// * `seq2` - The second sequence
 ///
-fn corrcoef_f32x8(seq1: &[f32], seq2: &[f32]) -> f32 {
+/// # Panics
+pub fn corrcoef_f32x8(seq1: &[f32], seq2: &[f32]) -> f32 {
     let seq_len = seq1.len();
     assert_eq!(seq_len, seq2.len());
 
