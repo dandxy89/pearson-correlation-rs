@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/dandxy89/pearson-correlation-rs/compare/v0.1.0...v0.1.1) (2024-02-03)
+
+
+### Build System
+
+* **deps:** Bump actions/cache from 3 to 4 ([#4](https://github.com/dandxy89/pearson-correlation-rs/issues/4)) ([296dfd7](https://github.com/dandxy89/pearson-correlation-rs/commit/296dfd7d440f058606ac7896c7c65733b094e119))
+
 ## 0.1.0 (2024-01-06)
 
 
