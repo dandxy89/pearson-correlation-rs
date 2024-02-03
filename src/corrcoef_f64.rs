@@ -47,3 +47,17 @@ pub fn corrcoef_f64x4(seq1: &[f64], seq2: &[f64]) -> f64 {
     let denom = sum_sq1_sum.sqrt() * sum_sq2_sum.sqrt();
     dot_product_sum / denom
 }
+
+#[cfg(test)]
+mod tests {
+    use float_eq::assert_float_eq;
+
+    use super::corrcoef_f64x4;
+
+    #[test]
+    fn correlation_basic() {
+        let seq1 = [1.0, 2.0, 3.0, 4.0];
+        let seq2 = [1.0, 2.0, 3.0, 4.0];
+        assert_float_eq!(corrcoef_f64x4(&seq1, &seq2), 1.0, abs <= 1e-10);
+    }
+}

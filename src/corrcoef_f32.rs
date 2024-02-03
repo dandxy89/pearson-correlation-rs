@@ -47,3 +47,17 @@ pub fn corrcoef_f32x8(seq1: &[f32], seq2: &[f32]) -> f32 {
     let denom = sum_sq1_sum.sqrt() * sum_sq2_sum.sqrt();
     dot_product_sum / denom
 }
+
+#[cfg(test)]
+mod tests {
+    use float_eq::assert_float_eq;
+
+    use super::corrcoef_f32x8;
+
+    #[test]
+    fn correlation_basic() {
+        let seq1 = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0];
+        let seq2 = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0];
+        assert_float_eq!(corrcoef_f32x8(&seq1, &seq2), 1.0, abs <= 1e-10);
+    }
+}
