@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/dandxy89/pearson-correlation-rs/compare/v0.1.1...v0.1.2) (2024-02-20)
+
+
+### Build System
+
+* **deps:** Bump anyhow from 1.0.79 to 1.0.80 ([#8](https://github.com/dandxy89/pearson-correlation-rs/issues/8)) ([bee0780](https://github.com/dandxy89/pearson-correlation-rs/commit/bee0780cd42f05a1f5efa4b12be1712097198839))
+
 ## [0.1.1](https://github.com/dandxy89/pearson-correlation-rs/compare/v0.1.0...v0.1.1) (2024-02-05)
 
 
