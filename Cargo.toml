@@ -1,6 +1,6 @@
 [package]
 name = "pearson-correlation-rs"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 rust-version = "1.56.0"
 authors = ["Dan Dixey", "Dan Dixey <dan@functorml.co.uk>"]
